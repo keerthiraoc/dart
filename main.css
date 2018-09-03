@@ -1,0 +1,45 @@
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.outermost {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    background-color: grey;
+    position: relative;
+}
+
+.outer {
+    position: relative;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+}
+
+.innermost {
+    position: relative;
+    border-radius: 50%;
+    width: 70%;
+    height: 70%;
+    background-color: green;
+}
+
+.inner {
+    position: relative;
+    border-radius: 50%;
+    width: 64%;
+    height: 64%;
+    background-color: white;
+}
+
+.center {
+    position: relative;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    background-color: red;
+}

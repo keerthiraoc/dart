@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dart</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+    <div class="items">
+        <div class="outermost items" id="first" href="javascript:void(0)" onclick="first()">
+            <div class="outer items" id="second" href="javascript:void(0)" onclick="second()">
+                <div class="innermost items" id="third" href="javascript:void(0)" onclick="third()">
+                    <div class="inner items" id="fourth" href="javascript:void(0)" onclick="fourth()">
+                        <div class="center items" id="fifth" href="javascript:void(0)" onclick="fifth()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function first()
+        {
+            event.stopPropagation();
+            swal("it is ok");
+        }
+        function second()
+        {
+            event.stopPropagation();
+            swal("it is good");
+        }
+        function third()
+        {
+            event.stopPropagation();
+            swal("great");
+        }
+        function fourth()
+        {
+            event.stopPropagation();
+            swal("10 points");
+        }
+        function fifth()
+        {
+            event.stopPropagation();
+            swal("congratulations!");
+        }
+        // document.getElementById("first").onclick=function(){
+        //     swal("congratulations");
+        // }
+    </script>
+</body>
+
+</html>
